@@ -1,0 +1,214 @@
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Use border-box model for consistent sizing */
+    font-family: 'Open Sans', sans-serif; /* Use a sans-serif font for better readability */
+    font-size: 18px; /* Set base font size */
+    font-weight: 400; /* Normal weight for body text */
+    line-height: 1.75; /* Set line height for better readability */
+    background-color: white; /* Light grey background for the body */
+    color: #333; /* Dark grey text color */
+    height: 100%; /* Ensure the body takes up the full height of the viewport */
+}
+
+/* General Page Styling */
+body {
+    display: flex;
+    flex-direction: column; /* Use flexbox to structure the layout */
+    height: 100dvh; /* Ensure the page takes up the full viewport height */
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 0.1em;
+    background-color: #57068c; /* NYU Violet background */
+    color: white;
+}
+
+main {
+    text-align: left; /* Align text to the left */
+    flex: 1; /* Allow the main content to grow and take up available space */
+}
+
+ /* About Project */
+.about-project {
+    display: flex;
+    text-align: center; /* Center the about project section */
+    justify-content: center; /* Center the about project links */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Align items in a column */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    background-color: #f2eefa; /* Light purple background */
+    margin: 2em auto; /* Center the about project section */
+    padding: 0 1em; /* Add padding for spacing */
+    width: 80dvw; /* Set a fixed width for the about project section */
+    max-width: 900px; /* Set a maximum width for larger screens */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 2px 3px 9px #eee5ff; /* Shadow effect */
+}
+.about-project-text {
+    margin-top: -1em; /* Remove space above the text */
+}
+
+/* Team Members */
+.team-members {
+    display: flex;
+    flex-direction: column; /* Stack team member profiles vertically */
+    align-items: center; /* Center profiles horizontally */
+    margin: 2em auto; /* Add vertical margin */
+    width: 80dvw; /* Set a fixed width for the about project section */
+    max-width: 900px; /* Set a maximum width for larger screens */
+}
+
+/* Profile */
+.profile {
+    display: flex;
+    justify-content: left; /* Center the profile section */
+    align-items: center; /* Center vertically */
+    margin: 1em 0; /* Add margin for spacing */
+    flex-direction: row; /* Align items in a row */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+.profile-image {
+    border-radius: 50%; /* Make the image circular */
+    width: 150px; /* Set a fixed width for the image */
+    height: 150px; /* Set a fixed height for the image */
+    margin: 0 1em; /* Add space between the image and text */
+}
+.profile-text {
+    margin: 0.5em 0;
+    padding: 0 0.5em; /* Add padding to paragraphs for better spacing */
+    font-size: 1.1em; /* Slightly larger font size for better readability */
+    text-align: left; /* Align text to the left */
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    justify-content: left; /* Align items to the left */
+    flex-direction: row; /* Align items in a row */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+.contact-link {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    text-decoration: none; /* Remove underline from links */
+    justify-content: center; /* Center the contact links */
+    align-items: center; /* Center vertically */
+    color: #57068c; /* Black text color */
+    background-color: #eee5ff; /* Light purple background */
+    margin: 0.5em; /* Add margin for spacing */
+    padding: 0.1em 0.6em; /* Add padding for better spacing */
+    font-size: 0.9em; /* Set font size */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.contact-link:hover {
+    background-color: #eeccff; /* Darker shade on hover */
+    box-shadow: 0 0 5px #8e44ad; /* Shadow effect on hover */
+    transform: translateY(-2px); /* Slightly move up on hover */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.contact-link:active {
+    background-color: #eeccff; /* Darker shade on click */
+    box-shadow: 0 0 5px #8e44ad; /* Shadow effect on click */
+    transform: translateY(1px); /* Slightly move down on click */
+    transition: transform 0.1s ease; /* Smooth transition for click effect */
+}
+.contact-link:focus {
+    background-color: #eee5ff; /* Light purple background on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px #8e44ad;
+    transform: translateY(1px); /* Slightly move down on focus */
+    transition: transform 0.1s ease; /* Smooth transition for click effect */
+}
+.contact-link:visited {
+    color: #300051; /* Change color for visited links */
+}
+.contact-icons {
+    height: 18px; /* Set a fixed height for the icons */
+    margin-right: 0.23em; /* Add space between the icon and text */
+}
+
+/* Bio */
+.bio {
+    display: flex;
+    justify-content: center; /* Center the bio section */
+    align-items: center; /* Center vertically */
+    text-align: left; /* Align text to the left */
+    padding: 0 0.5em; /* Add padding to paragraphs for better spacing */
+    flex-direction: column; /* Align items in a column */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+.bio-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #57068c; /* NYU Violet color */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+.bio-link:hover {
+    color: #300051; /* Darker shade on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+.bio-link:active {
+    color: #300051; /* Darker shade on click */
+    text-decoration: underline; /* Underline on click */
+}
+.bio-link:focus {
+    color: #300051; /* Darker shade on focus */
+    text-decoration: underline; /* Underline on focus */
+}
+.bio-link:visited {
+    color: #300051; /* Change color for visited links */
+}
+.bio-icon {
+    height: 18px; /* Set a fixed height for the icons */
+    margin-right: 0.2em; /* Add space between the icon and text */
+    margin-bottom: -0.1em; /* Adjust bottom margin for better alignment */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Footer Styling */
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-size: 0.8em;
+    background-color: #57068c;
+    color: white;
+}
+.footer-text-left {
+    float: left;
+    padding: 0 0 0 1.6em; /* Add padding to paragraphs for better spacing */
+    text-align: left; /* Left-align text in the footer */
+}
+.footer-text-right {
+    float: right;
+    padding: 0 1.6em 0 0; /* Add padding to paragraphs for better spacing */
+    text-align: right; /* Right-align text in the footer */
+}
+.footer-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #eeccff; /* White text color */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+.footer-link:hover {
+    color: #eecfff; /* Darker shade on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+.footer-link:active {
+    color: #eecfff; /* Darker shade on click */
+    text-decoration: underline; /* Underline on click */
+}
+.footer-link:focus {
+    color: #eecfff; /* Darker shade on focus */
+    text-decoration: underline; /* Underline on focus */
+}
+.footer-link:visited {
+    color: #eecfff; /* Change color for visited links */
+}
